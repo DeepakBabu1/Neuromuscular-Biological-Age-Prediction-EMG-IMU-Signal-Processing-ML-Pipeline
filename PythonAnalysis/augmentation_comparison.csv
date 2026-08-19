@@ -1,0 +1,13 @@
+method,model,n_real,n_synthetic_per_fold,accuracy_or_MAE,AUC_or_r,permutation_p,wilcoxon_p_vs_no_augmentation,notes
+none,Logistic Regression,29,0,0.6207,0.6779,0.032,,"Existing Row 1 result, reused verbatim (classification_young_vs_old.csv)."
+none,Ridge (nested top-3),29,0,13.58,0.194,,,"Existing result, reused verbatim (master_results_summary.csv). Nested top-3 reselection, not fixed."
+none,Lasso (nested top-3),29,0,13.47,0.208,,,"Existing result, reused verbatim (master_results_summary.csv). Nested top-3 reselection, not fixed."
+noise,Logistic Regression,29,84,0.6897,0.6731,,0.3173,Fixed primary 3-feature set (matches Row 1). 
+noise,"Ridge (fixed primary-3, augmented)",29,84,11.9813,0.4555,,0.1056,Fixed primary 3-feature set (synthetic data has no other candidates to reselect from) -- compared against the nested-top-3 baseline; feature-set difference noted.
+noise,"Lasso (fixed primary-3, augmented)",29,84,12.227,0.4184,,0.0113,Fixed primary 3-feature set (synthetic data has no other candidates to reselect from) -- compared against the nested-top-3 baseline; feature-set difference noted.
+smote,Logistic Regression,29,69,0.6552,0.6779,,0.5637,Fixed primary 3-feature set (matches Row 1). 
+smote,"Ridge (fixed primary-3, augmented)",29,69,11.8609,0.4576,,0.0963,Fixed primary 3-feature set (synthetic data has no other candidates to reselect from) -- compared against the nested-top-3 baseline; feature-set difference noted.
+smote,"Lasso (fixed primary-3, augmented)",29,69,12.0806,0.4346,,0.3692,Fixed primary 3-feature set (synthetic data has no other candidates to reselect from) -- compared against the nested-top-3 baseline; feature-set difference noted.
+gmm,Logistic Regression,29,69,0.6552,0.6827,,0.5637,Fixed primary 3-feature set (matches Row 1). 
+gmm,"Ridge (fixed primary-3, augmented)",29,69,12.2143,0.4436,,0.0179,Fixed primary 3-feature set (synthetic data has no other candidates to reselect from) -- compared against the nested-top-3 baseline; feature-set difference noted.
+gmm,"Lasso (fixed primary-3, augmented)",29,69,12.4693,0.415,,0.1104,Fixed primary 3-feature set (synthetic data has no other candidates to reselect from) -- compared against the nested-top-3 baseline; feature-set difference noted.

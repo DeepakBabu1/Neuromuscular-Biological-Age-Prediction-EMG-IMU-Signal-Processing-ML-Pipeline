@@ -1,0 +1,6 @@
+Run,N_features,Feature_selection,Model,N,MAE,RMSE,Pearson_r,p_value,Beats_baseline,Significant
+Run 1/5: Nested gplearn (33->per-fold),10-12 (varies/fold),Per-fold nested (leakage-free),gplearn,29,13.72,17.42,0.16,0.4078,True,False
+Run 6: Nested Linear (33->per-fold),10-12 (varies/fold),Per-fold nested (leakage-free),Linear regression,29,15.35,18.23,0.125,0.5181,False,False
+Run 4b: Fixed 3-feature Linear (leaky),3,"Whole-sample (fixed, leaky)",Linear regression,29,12.28,13.47,0.451,0.014,True,True
+Run 2: 8-feature gplearn (leaky),8,"Whole-sample (fixed, leaky)",gplearn,29,12.31,14.45,0.4,0.0314,True,True
+Run 4a: Fixed 3-feature gplearn (leaky),3,"Whole-sample (fixed, leaky)",gplearn,29,14.26,16.05,0.316,0.0947,False,False

@@ -1,0 +1,6 @@
+seed,mae,r,n_nodes,depth,passes_ceiling,equation,equation_readable
+0,12.034180300169698,0.3194174081367793,3,1,True,"add(X5, X6)","add(stride_timing_cv_walkingincline, rom_pitch_stepforward)"
+1,12.067480827586207,0.3132318717861755,1,0,True,X6,rom_pitch_stepforward
+2,11.960459813584668,0.3266526369617684,3,1,True,"add(X1, X6)","add(stride_timing_cv_walking, rom_pitch_stepforward)"
+3,12.006295904342297,0.3132318717861755,3,1,True,"sub(X6, 1.936)","sub(rom_pitch_stepforward, 1.936)"
+4,11.960459813584668,0.3266526369617684,3,1,True,"add(X1, X6)","add(stride_timing_cv_walking, rom_pitch_stepforward)"

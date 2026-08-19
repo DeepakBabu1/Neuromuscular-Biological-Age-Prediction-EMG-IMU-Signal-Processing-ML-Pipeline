@@ -1,0 +1,19 @@
+GROUP INTERACTION MODEL -- SUMMARY
+============================================================
+Participants in feature_table_full.csv: 29
+Participants dropped (missing data): 11
+Dropped participant IDs: [6, 8, 9, 11, 12, 14, 18, 24, 26, 33, 35]
+Final N used: 18
+
+Model A (no interaction) formula: age ~ peak_roll_walkingincline + stride_timing_cv_walking + rom_roll_ratio_stepforward_walk + group
+Model B (with interaction) formula: age ~ peak_roll_walkingincline + stride_timing_cv_walking + rom_roll_ratio_stepforward_walk + group + group:peak_roll_walkingincline + group:stride_timing_cv_walking + group:rom_roll_ratio_stepforward_walk
+
+Model A: R2=0.9287  AIC=111.89
+Model B: R2=0.9558  AIC=109.30
+
+Likelihood-ratio test: LR statistic = 8.5898, df = 3, p-value = 0.0353
+
+PLAIN-LANGUAGE CONCLUSION:
+The interaction terms ARE statistically significant (p < 0.05): the relationship between the three features and age appears to differ between young and older participants, suggesting separate group-specific slopes may be warranted.
+
+CAVEAT: this test is fit on N=18, not the full N=29 cohort -- 11 participants ([6, 8, 9, 11, 12, 14, 18, 24, 26, 33, 35]) were dropped via listwise deletion, almost entirely driven by missingness in stride_timing_cv_walking (footstep-detection failures in some trials). Model B has 8 parameters fit on 18 observations (2.25 observations per parameter) -- a thin ratio that carries real overfitting risk and should temper confidence in this result regardless of which way the p-value falls. Treat this as suggestive, not confirmatory.

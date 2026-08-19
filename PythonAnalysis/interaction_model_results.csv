@@ -1,0 +1,2 @@
+N,model_a_formula,model_b_formula,model_a_R2,model_b_R2,model_a_AIC,model_b_AIC,LR_statistic,df,p_value,interaction_significant
+18,age ~ peak_roll_walkingincline + stride_timing_cv_walking + rom_roll_ratio_stepforward_walk + group,age ~ peak_roll_walkingincline + stride_timing_cv_walking + rom_roll_ratio_stepforward_walk + group + group:peak_roll_walkingincline + group:stride_timing_cv_walking + group:rom_roll_ratio_stepforward_walk,0.9287,0.9558,111.89,109.3,8.5898,3,0.0353,True

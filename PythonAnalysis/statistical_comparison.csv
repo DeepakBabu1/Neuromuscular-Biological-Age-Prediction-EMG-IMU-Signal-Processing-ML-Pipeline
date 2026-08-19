@@ -1,0 +1,11 @@
+comparison,wilcoxon_stat,wilcoxon_p,mae_difference,ci_lower_95,ci_upper_95,significant
+Ridge vs Baseline,181.0,0.442,-0.8836,-3.1759,1.444,False
+Lasso vs Baseline,176.0,0.3808,-0.9952,-3.3605,1.381,False
+Linear vs Baseline,212.0,0.9152,-0.2116,-2.8219,2.3339,False
+gplearn vs Baseline,176.0,0.3808,-0.7476,-4.5012,3.2933,False
+Ridge vs Lasso,191.0,0.5793,0.1116,-0.2731,0.5672,False
+Ridge vs Linear,145.0,0.1207,-0.672,-1.9272,0.6495,False
+Ridge vs gplearn,199.0,0.7013,-0.1359,-4.8535,4.1229,False
+Lasso vs Linear,140.0,0.0963,-0.7836,-2.0121,0.4056,False
+Lasso vs gplearn,201.0,0.7332,-0.2475,-4.7424,3.7626,False
+Linear vs gplearn,190.0,0.5647,0.5361,-3.9987,4.8767,False

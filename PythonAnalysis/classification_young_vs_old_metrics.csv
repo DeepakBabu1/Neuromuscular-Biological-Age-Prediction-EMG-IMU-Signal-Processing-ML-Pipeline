@@ -1,0 +1,2 @@
+N,accuracy,sensitivity_old,specificity_young,AUC_ROC,TN,FP,FN,TP
+29,0.6207,0.5385,0.6875,0.6779,11,5,6,7
